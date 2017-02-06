@@ -1,0 +1,15 @@
+{
+  "name": "toyswap",
+  "description": "app req",
+  "main": "app.js",
+  "authors": [
+    "Tom"
+  ],
+  "license": "ISC",
+  "homepage": "app/user-dashboard/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "boostrap#^3.3.7",
+    "angular": "^1.6.1"
+  }
+}
