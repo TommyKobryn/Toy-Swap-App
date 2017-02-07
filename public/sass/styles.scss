@@ -1,0 +1,26 @@
+$main-color : green;
+$shadow-boxes :  8px 9px 16px -6px rgba(1,14,28,1);
+
+h1 {
+  color:$main-color;
+}
+
+.thumbnail {
+box-shadow: $shadow-boxes;
+  max-height: 390px;
+  min-height: 390px;
+  .middle {
+text-align: center;
+
+    a {
+  width : 100%;
+  color: black;
+  font-weight: bold;
+}
+  }
+    }
+
+#toy-list {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
