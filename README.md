@@ -6,5 +6,5 @@ Ready APIs are in the model folder.
 
 Used stack: 
 
-Backend: Node, Express, Mongoose NoSQL
-FrontEnd: Angular, Bootstrap, JQuery, Sass, Gulp
+Backend: Node, Express, Mongoose NoSQL.
+FrontEnd: Angular, Bootstrap, JQuery, Sass, Gulp.
