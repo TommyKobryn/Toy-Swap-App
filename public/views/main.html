@@ -1,0 +1,48 @@
+
+
+<!-- ............ Angular Code comes here ............................ -->
+
+<div class="container">
+
+     <!-- HEADER AND TODO COUNT -->
+     <div class="text-center">
+         <h1>Number of Toys Posted on Your Account <span class="label label-info">{{ toys.length }}</span></h1>
+     </div>
+
+     <div class="row" id="toy-list">
+       <div class="col-sm-4 col-md-3" ng-repeat= "x in toys"  >
+         <div class="thumbnail" >
+           <img class="img-circle" src="/images/toy1.jpg" width="200" height="200" alt="...">
+           <div class="caption">
+             <h3>{{x.name}}</h3>
+             <p>{{x.description| limitTo: 100}} ...</p>
+             <p class="middle"><a href="#" class="btn btn-warning" role="button">Read More</a> </p>
+           </div>
+         </div>
+       </div>
+     </div>
+</div>
+
+      <h2 class="sub-header">Table List of Your Toys</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>description</th>
+              <th>Age Range</th>
+              <th>Creation Date</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr ng-repeat="x in toys">
+              <td>{{$index + 1}}</td>
+              <td>{{x.name}}</td>
+              <td>{{x.description}}</td>
+              <td>{{x.age}}</td>
+              <td>{{x.date | date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>

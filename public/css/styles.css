@@ -1,0 +1,17 @@
+h1 {
+  color: green; }
+
+.thumbnail {
+  box-shadow: 8px 9px 16px -6px #010e1c;
+  max-height: 390px;
+  min-height: 390px; }
+  .thumbnail .middle {
+    text-align: center; }
+    .thumbnail .middle a {
+      width: 100%;
+      color: black;
+      font-weight: bold; }
+
+#toy-list {
+  margin-top: 30px;
+  margin-bottom: 20px; }

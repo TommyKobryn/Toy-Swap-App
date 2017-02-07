@@ -1,5 +1,5 @@
 // public/core.js
-var toyswap = angular.module('toyswap', []);
+var toyswap = angular.module('toyswap', ["ngRoute"]);
 
 toyswap.controller('mainController',function($scope, $http) {
 
@@ -8,6 +8,17 @@ toyswap.controller('mainController',function($scope, $http) {
       .then(function(response) {
           $scope.toys = response.data;
 
-          
+
       });
+});
+
+toyswap.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "views/main.html"
+    })
+    .when("/addnew", {
+        templateUrl : "views/addnew.html"
+    })
+    .otherwise('/');
 });
