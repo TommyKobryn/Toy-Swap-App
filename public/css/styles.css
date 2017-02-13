@@ -1,10 +1,11 @@
-h1 {
-  color: green; }
+.page-header {
+  color: black; }
 
 .thumbnail {
   box-shadow: 8px 9px 16px -6px #010e1c;
   max-height: 390px;
-  min-height: 390px; }
+  min-height: 390px;
+  max-width: auto;}
   .thumbnail .middle {
     text-align: center; }
     .thumbnail .middle a {
@@ -15,3 +16,8 @@ h1 {
 #toy-list {
   margin-top: 30px;
   margin-bottom: 20px; }
+
+#title {
+  color: green;
+  font-style: italic;
+  font-weight: bold; }

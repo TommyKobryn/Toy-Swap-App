@@ -6,6 +6,7 @@ var ToySchema = new Schema({
   name: String,
   description : String,
   age : String,
+  image : String,
   date : { type: Date, default: Date.now },
 });
 

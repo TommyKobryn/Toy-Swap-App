@@ -16,58 +16,148 @@
 
   </head>
   <body ng-controller="mainController">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#!/">Toy-Swap App Dashboard</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
-      </div>
-    </nav>
+    <div id="wrapper">
+          <nav class="navbar-default navbar-static-side" role="navigation">
+              <div class="sidebar-collapse">
+                  <ul class="nav metismenu" id="side-menu">
+                      <li class="nav-header">
+                          <div class="dropdown profile-element text-center"> <span>
+                              <img alt="image" class="img-circle" src="images/user.jpg" width="80px" height="80px;" />
+                               </span>
+                              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                              <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Sample User Name</strong>
+                              </span> <span class="text-muted text-xs block">Additinal options <b class="caret"></b></span> </span> </a>
+                              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                  <li><a href="#!/">Profile</a></li>
+                                  <li><a href="#!/">Contacts</a></li>
+                                  <li><a href="#!/">Mailbox</a></li>
+                                  <li class="#!/"></li>
+                                  <li><a href="#!/">Logout</a></li>
+                              </ul>
+                          </div>
+                          <div class="logo-element">
+                              IN+
+                          </div>
+                      </li>
+                      <li class="active">
+                          <a href="#!/"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li><a href="#!/">All Your Posted Toys <span class="sr-only">(current)</span></a></li>
-            <li><a href="#!/addnew">Add a New One</a></li>
-            <li><a href="#">Edit Exesting One</a></li>
-            <li><a href="#">Delete a Posted Toy</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">More Options</a></li>
-            <li><a href="">More Options</a></li>
-            <li><a href="">More Options</a></li>
-            <li><a href="">More Options</a></li>
-            <li><a href="">More Options</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">More Options</a></li>
-            <li><a href="">More Options</a></li>
-            <li><a href="">More Options</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
+                      </li>
+                      <li>
+                          <a href="#!/addnew"><i class="fa fa-diamond"></i> <span class="nav-label">Add new Toy</span></a>
+                      </li>
+                      <li>
+                          <a href="#!/"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Update Toys</span><span class="fa arrow"></span></a>
+
+                      </li>
+                      <li>
+                          <a href="#!/"><i class="fa fa-envelope"></i> <span class="nav-label">Delete Toys </span><span class="label label-warning pull-right">{{toys.lenght}}</span></a>
+
+                      </li>
+                      <li>
+                          <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Sample Page</span>  </a>
+                      </li>
+                      <li>
+                          <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Sample Page</span></a>
+                      </li>
 
 
-<ng-view> </ng-view>
+                      <li>
+                          <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Sample Page </span><span class="fa arrow"></span></a>
+                          <ul class="nav nav-second-level collapse">
+                              <li>
+                                  <a href="#" id="damian">Sample Page <span class="fa arrow"></span></a>
+
+
+                              </li>
+                              <li><a href="#">Second Level Item</a></li>
+                              <li>
+                                  <a href="#">Second Level Item</a></li>
+                              <li>
+                                  <a href="#">Second Level Item</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">Sample Page </span></a>
+                      </li>
+                      <li class="landing_link">
+                          <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Sample Page</span> <span class="label label-warning pull-right">NEW</span></a>
+                      </li>
+                      <li class="special_link">
+                          <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Sample Page</span></a>
+                      </li>
+                  </ul>
+
+              </div>
+          </nav>
+
+          <div id="page-wrapper" class="gray-bg dashbard-1">
+          <div class="row border-bottom">
+          <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+              <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+              <form role="search" class="navbar-form-custom" action="search_results.html">
+                  <div class="form-group">
+                      <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                  </div>
+              </form>
+          </div>
+              <ul class="nav navbar-top-links navbar-right">
+                  <li>
+                      <span class="m-r-sm text-muted welcome-message">Welcome to User Dashboard.</span>
+                  </li>
+
+
+                  <li>
+                      <a href="login.html">
+                          <i class="fa fa-sign-out"></i> Log out
+                      </a>
+                  </li>
+                  <li>
+                      <a class="right-sidebar-toggle">
+                          <i class="fa fa-tasks"></i>
+                      </a>
+                  </li>
+              </ul>
+
+          </nav>
+          </div>
+                  <div class="row  border-bottom white-bg dashboard-header">
+
+
+                          <h2>Welcome Amelia</h2>
+
+
+
+
+
+                          <ng-view> </ng-view>
+
+
+
+
+
+                  <div class="footer">
+                      <div class="pull-right">
+                          10GB of <strong>250GB</strong> Free.
+                      </div>
+                      <div>
+                          <strong>Copyright</strong> Example Company &copy; 2014-2017
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,8 +167,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="jquery/dist/jquery.min.js"></script><!-- load jquery -->
     <script src="bootstrap/dist/js/bootstrap.min.js"></script><!-- load angular -->
-    <script src="angular/angular.min.js"></script><!-- load angular -->
+    <script src="angular/angular.js"></script><!-- load angular -->
     <script src="core.js"></script><!-- load angular -->
+    <script src="controllers/toys.js"></script><!-- load angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 
   </body>

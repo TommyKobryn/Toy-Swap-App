@@ -1,7 +1,16 @@
-$main-color : green;
+$main-color : black;
 $shadow-boxes :  8px 9px 16px -6px rgba(1,14,28,1);
+$green : green;
+$style-italice : italic;
+$style-bolded : bold;
 
-h1 {
+@mixin title-style {
+  color: $green;
+  font-style: $style-italice;
+  font-weight: $style-bolded;
+}
+
+.page-header {
   color:$main-color;
 }
 
@@ -23,4 +32,8 @@ text-align: center;
 #toy-list {
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+#title {
+@include title-style;
 }
