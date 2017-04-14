@@ -1,0 +1,115 @@
+// ................................... includes .........................
+
+@import "footer";
+@import "header";
+
+
+$background :  yellow;
+@mixin titleelement {
+font-size: 40px;
+font-weight: bold;
+font-family: serif;
+}
+
+#logo {
+  height: 100px;
+  width: 190px;
+  margin-right: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+p, a {
+  font-size: 120%;
+}
+
+  // ...............................Home page Body rest of css ...............
+
+  .row-content {
+margin-bottom: 50px;
+margin-top: 30px;
+padding-top: 30px;
+padding-bottom: 60px;
+border-bottom: 1px solid #adadad;
+  }
+
+#titleelement {
+    @include titleelement;
+  }
+
+  #index-link {
+color: orange;
+font-size: 140%;
+font-weight: bold;
+  }
+    #index-link:hover {
+      color: red;
+    }
+
+
+#listElement:hover {
+  background-color: #8fd698;
+  box-shadow: inset 200px 0px 5px 0px #e0e0e0;
+      color: black;
+      img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all ease 1.8s;
+	-moz-transition: all ease 1.8s;
+	transition: all ease 1.8s;
+      }
+}
+
+#listElement {
+  color: #31302B;
+    background: #ececec;
+    font-family: 'OpenSansBold', sans-serif;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #116d14;
+	-webkit-transition: all ease 1.8s;
+	-moz-transition: all ease 1.8s;
+	transition: all ease 1.8s;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+
+#checklistpic {
+  height: 280px;
+  width: 330px;
+  margin-top: -30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs-content-wrapper {
+  img {
+    width : 300px;
+    height: 200px;
+    border-top-left-radius: 5% ;
+  border-top-right-radius: 5% ;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  }
+  .title-tab {
+    font-family: serif;
+    font-size: 240%;
+    color: black;
+  }
+  p {
+    font-size: 120%;
+  }
+  button {
+    font-size: 120%;
+    font-weight: bold;
+    width : 250px;
+    height: 55px;
+  }
+}
+
+.row-contentt {
+padding-left: 30px;
+padding-right: 30px;
+}

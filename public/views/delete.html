@@ -1,0 +1,49 @@
+
+
+<!-- ............ Angular Code comes here ............................ -->
+
+<div class="container">
+
+     <div class="text-center" ng-init="getToys()">
+         <h1 id="title">Number of Toys Posted on Your Account <span class="label label-info">{{ toys.length }}</span></h1>
+     </div>
+
+     <div class="row col-sm-11" id="toy-list" ng-init="getToys()">
+       <div class="col-sm-4 col-md-3" ng-repeat= "x in toys"  >
+         <div class="thumbnail" >
+           <img class="img-circle" src="{{x.image}}" width="200" height="200" alt="...">
+           <div class="caption">
+             <h3>{{x.name}}</h3>
+             <p>{{x.description| limitTo: 100}} ...</p>
+             <p class="middle"><a href="#" ng-click="removeToy(toy._id)" class="btn btn-warning" role="button">Delete</a> </p>
+           </div>
+         </div>
+       </div>
+     </div>
+</div>
+
+      <h2 class="sub-header">Table List of Your Toys</h2>
+      <div class="table-responsive" ng-init="getToys()">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>description</th>
+              <th>Age Range</th>
+              <th>Image source</th>
+              <th>Creation Date</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr ng-repeat="x in toys">
+              <td>{{$index + 1}}</td>
+              <td>{{x.name}}</td>
+              <td>{{x.description}}</td>
+              <td>{{x.age}}</td>
+              <td>{{x.image}}</td>
+              <td>{{x.date | date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>

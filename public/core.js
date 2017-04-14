@@ -6,11 +6,14 @@ var toyswap = angular.module('toyswap', ["ngRoute"]);
 
 toyswap.config(function($routeProvider) {
     $routeProvider
-    .when("/", {
+    .when("/admin", {
         templateUrl : "views/main.html"
     })
     .when("/addnew", {
         templateUrl : "views/addnew.html"
     })
-    .otherwise('/');
+    .when("/delete", {
+        templateUrl : "views/delete.html"
+    })
+    .otherwise('/admin');
 });

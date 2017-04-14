@@ -1,0 +1,19 @@
+{
+  "name": "Programming for the Web coursework I",
+  "authors": [
+    "Tom Kobryn <tom.kobryn@gmail.com>"
+  ],
+  "description": "simple app",
+  "main": "index.html",
+  "keywords": [
+    "none"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7",
+    "mustache.js": "mustache#^2.3.0"
+  }
+}

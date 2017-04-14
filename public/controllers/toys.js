@@ -30,9 +30,19 @@ window.location.href="#!/";
 });
 };
 
+
+$scope.removeToy = function(id) {
+$http.delete('/toys/' + id).success(function(response){
+  window.location.href = "#!/";
+});
+
+};
+
 $scope.url = {
       text: 'example: http://combiboilersleeds.com/images/toy/toy-2.jpg'
     };
+
+
 
 
 }]);
